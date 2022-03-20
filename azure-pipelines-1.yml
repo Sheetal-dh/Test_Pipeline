@@ -17,9 +17,9 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    C:\Users\gsheetald\AppData\Local\Programs\Python\Python310\pip install pytest xlrd pytest-html
-    C:\Users\gsheetald\AppData\Local\Programs\Python\Python310\pip install -r requirements.txt
-    pytest tests\win --self-contained-html --html="c:/reports/report.html"
+    # C:\Users\gsheetald\AppData\Local\Programs\Python\Python310\pip install pytest xlrd pytest-html
+    # C:\Users\gsheetald\AppData\Local\Programs\Python\Python310\pip install -r requirements.txt
+    # pytest tests\win --self-contained-html --html="c:/reports/report.html"
     python myscript.py
     move report1.html c:\\reports
     echo "Automation Execution Finished"
