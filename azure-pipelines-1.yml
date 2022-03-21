@@ -8,7 +8,7 @@ trigger:
 - master
 
 pool:
-  name: Sheetal_Pipeline_Pool
+  name: test-pipeline
   demands:
    - agent.name -equals my-vm
 
