@@ -17,6 +17,16 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+  @echo off
+  echo Hello World from %AGENT_NAME%.
+  echo My ID is %AGENT_ID%.
+  echo AGENT_WORKFOLDER contents:
+  @dir %AGENT_WORKFOLDER%
+  echo AGENT_BUILDDIRECTORY contents:
+  @dir %AGENT_BUILDDIRECTORY%
+  echo BUILD_SOURCESDIRECTORY contents:
+  @dir %BUILD_SOURCESDIRECTORY%
+  echo Over and out.
     C:\Users\gsheetald\AppData\Local\Programs\Python\Python310\pip install pytest xlrd pytest-html
     C:\Users\gsheetald\AppData\Local\Programs\Python\Python310\pip install -r requirements.txt
     pytest tests\win --self-contained-html --html="c:/reports/report.html"
