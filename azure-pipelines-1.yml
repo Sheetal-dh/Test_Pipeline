@@ -10,7 +10,7 @@ trigger:
 pool:
   name: Sheetal_Pipeline_Pool
   demands:
-   - agent.name -equals pipeline
+   - agent.name -equals my-vm
 
 steps:
 - script: echo Hello, world!
