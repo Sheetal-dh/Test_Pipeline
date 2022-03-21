@@ -17,7 +17,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-  @echo off
   echo Hello World from %AGENT_NAME%.
   echo My ID is %AGENT_ID%.
   echo AGENT_WORKFOLDER contents:
